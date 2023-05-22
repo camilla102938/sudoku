@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>level3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+
+<div id="homex3">
+<h1>LEVEL 3</h1>
+    
+
+     <!-- number of wrong enswers -->
+        <h3 id="errors">~0~</h3>
+
+
+     <!-- game board 9x9 -->
+        <div id="game3">
+     
+       </div>
+
+
+
+       <!-- number buttons for enswers -->
+    <div  onclick="select()" id="nums"></div>
+
+
+    <button onclick="reset()" class="end" id="lev3"><a href="gameL3.html"  id="lev3">again</a></button>
+    <button onclick='finishGame()' class="end"  id="lev3">finish</button>
+
+    <div class="popup" id="popup">
+        <img src="ing.png">
+        <h2>good job!</h2>
+        <p>you have succided the level</p>
+        <button type="button" onclick="closePopup()"><a href="gameL3.html"  id="xpopup">OK</a></button>
+
+    </div>
+
+    <div class="popupF" id="popupF">
+        <img src="x.png">
+        <h2>try again!</h2>
+        <p>better luck next time</p>
+        <button type="button" onclick="closePopup()"><a href="gameL3.html"  id="xpopupF">OK</a></button>
+
+    </div>
+
+
+</div>
+
+    <script src='level3.js'></script>
+</body>
+</html>

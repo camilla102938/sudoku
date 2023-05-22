@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>level1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+
+<div id="homex1">
+<h1>LEVEL 1</h1>
+    
+
+     <!-- number of wrong enswers -->
+        <h3 id="errors">~0~</h3>
+
+
+        <!-- game board 9x9 -->
+        <!-- created by js -->
+        <div id="game1"></div>
+
+
+        <!-- number buttons for enswers -->
+        <!-- created by js -->
+        <div id="nums"> </div>
+
+
+    <!-- <button class="end">finish</button> -->
+
+    <!-- //rests the board when click on <again button></again> -->
+    <button class="end"  id="lev1"><a href="gameL1.html"  id="lev1">again</a></button>
+    <button onclick='finishGame()' class="end"  id="lev1">finish</button>
+
+
+
+    <!--popup messeg for player if he passed  the level  -->
+    <div class="popup" id="popup">
+        <img src="ing.png">
+        <h2>good job!</h2>
+        <p>you passed the level</p>
+        <button type="button" onclick="closePopup()"><a href="gameL1.html"  id="xpopup">OK</a></button>
+
+    </div>
+
+
+<!--popup messeg for player if he failed  the level  -->
+    <div class="popupF" id="popupF">
+        <img src="x.png">
+        <h2>try again!</h2> 
+        <p>better luck next time</p>
+        <button type="button" onclick="closePopup()"><a href="gameL1.html"  id="xpopupF">OK</a></button>
+
+    </div>
+
+</div>
+
+    <script src='level1.js'></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sudoku game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+
+<div id="home">
+
+<br>
+<br>
+    <h1>soduku</h1>
+    <hr>
+    <br>
+
+
+<input class="user" id="userName" type="text" placeholder="user name">
+<br>
+<br>
+<input class="user" id='password' type="password" placeholder="password">
+<br>
+<br>
+<button id="userEnter" onclick="enter()">enter</button>
+
+
+
+
+<!-- wellcome popup message -->
+<div class="hello" id="hello">
+    <img src="smiley.png">
+    <h2>hello player!</h2>
+    <p>now choose your dificulty level</p>
+    <button type="button" onclick="closePopup()"><a href="dificultyLevel.html"  id="xhello">OK</a></button>
+
+</div>
+
+
+
+<!-- no acouny popup message -->
+<div class="bey" id="bey">
+    <img src="sad.png">
+    <h2>sorry :(</h2>
+    <p>your acount dosnt accist</p>
+    <a href="newAcount.html" id="newAcn">do you want to create an acount?</a>
+    <button type="button" onclick="closePopup()"><a href="homePage.html"  id="xbey">NO</a></button>
+
+</div>
+
+</div>
+
+    <script src='enter.js'></script>
+</body>
+</html>
